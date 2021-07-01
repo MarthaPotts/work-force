@@ -6,12 +6,13 @@ class Sorter extends React.Component {
     //const handleSort = () =>
 
     render() {
+        
         return(
             <div className="dropdown">
                 <p>Sort by:</p>
                 <form>
-                    <select name="category">
-                        <option value="Name" selected
+                    <select name="category" defaultValue="Name">
+                        <option value="Name" 
                         onChange={ (e) => this.setState(
                             {sortedValue: e.target.value}
                         )}>Name</option>
@@ -21,15 +22,6 @@ class Sorter extends React.Component {
                             {sortedValue: e.target.value}
                         )}>Email</option>
 
-                        <option value="Image"
-                        onChange={ (e) => this.setState(
-                            {sortedValue: e.target.value}
-                        )}>Image</option>
-
-                        <option value="DOB"
-                        onChange={ (e) => this.setState(
-                            {sortedValue: e.target.value}
-                        )}>DOB</option>
                     </select>
                 </form>
             </div>
