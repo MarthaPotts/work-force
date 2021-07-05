@@ -1,18 +1,19 @@
-// import logo from './logo.svg';
-import './App.css';
-// import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
-import FilterMenu from './components/FilterMenu/index.js';
-import API from '../src/utils/API.js'; 
-import Header from './components/Header/index.js';  
+import React from 'react'; 
+import Main from './components/Main.js'; 
+import Wrapper from './components/Wrapper.js'; 
+import Header from './components/Header.js'; 
+
+import './App.css'; 
 
 function App() {
-  return (
+    return(
     <div className="App">
-      <Header />
-      <API />
-      <FilterMenu />
+        <Wrapper >
+        <Header />
+        <Main />
+        </Wrapper>
     </div>
-  );
+    ); 
 }
 
-export default App;
+export default App; 

@@ -1,9 +1,0 @@
-td, th {
-    padding: 10px; 
-}
-#table-wrapper {
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-}
